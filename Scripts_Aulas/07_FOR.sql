@@ -1,0 +1,9 @@
+DECLARE
+    v_SEGMERCADO_ID CLIENTE.SEGMERCADO_ID%TYPE := 4;
+BEGIN
+    FOR v_I IN 1..6 LOOP
+        atualizar_cli_segmercado(v_I, v_SEGMERCADO_ID);
+    END LOOP;
+END;
+
+SELECT * FROM CLIENTE;
